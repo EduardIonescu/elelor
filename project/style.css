@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: hsl(185, 75%, 39%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Kumbh Sans", sans-serif;
+	font-size: 18px;
+	color: hsl(229, 23%, 23%);
+}
+
+.big-circle-top {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: -999;
+}
+
+.big-circle-bottom {
+	position: absolute;
+	transform: translate(55%, 50%);
+	z-index: -999;
+}
+
+.card {
+	width: 420px;
+	height: 460px;
+	background-color: white;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 1px 2px 0 hsl(227, 10%, 46%);
+}
+
+.top-part {
+	width: 100%;
+}
+
+.bottom-part {
+	text-align: center;
+}
+
+.bottom-part .circle-image {
+	border-radius: 50%;
+	margin-top: -60px;
+	border: 6px white solid;
+	height: 110px;
+	width: 110px;
+	background-size: cover;
+	margin-bottom: 12px;
+}
+
+.bottom-part div p {
+	padding: 6px;
+}
+
+.name,
+.likes .number {
+	font-weight: 700;
+}
+
+hr {
+	margin-top: 26px;
+	height: 1px;
+	background-color: hsl(0, 0%, 86%);
+	border: none;
+}
+
+.likes {
+	display: flex;
+	justify-content: space-around;
+	padding: 2.5rem;
+}
+
+.likes .text {
+	margin-top: 5px;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+.city {
+	font-size: 16px;
+	letter-spacing: 1px;
+}
